@@ -102,11 +102,11 @@ header nav {
     align-items: center;
 }
 
-header i {
+header nav i {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100%; 
 }
 
 header div {
