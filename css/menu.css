@@ -70,6 +70,7 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 
 h1 {
     font-size: 7.5rem;
+    text-align: center;
 }
 
 h2 {
@@ -98,11 +99,12 @@ header {
     background-repeat: no-repeat;
 }
 
-header div {
+.links {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+}
+
+header div {
     background-color: rgb(0, 4, 17, .8);
 }
 
@@ -181,7 +183,9 @@ footer {
         text-align: center;
         font-size: 4rem;
     }
-
+    .links {
+        flex-direction: column;
+    }
     /* menu */
     .menu {
         background-image: none;

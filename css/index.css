@@ -107,7 +107,6 @@ header {
     justify-content: space-evenly;
 }
 
-
 header nav i {
     display: flex;
     justify-content: center;
@@ -230,27 +229,15 @@ footer {
 .footer-container {
     width: 60%;
 }
-/* mobile media query */
-@media (max-width: 428px) {
-    /* header section */
-    header {
-        width: 100%;
-    }
 
-    .links {
-        flex-direction: column;
-    }
-
-    /* gallery section */
+/* tablet media query */
+@media (max-width: 1024px) {
     .gallery {
         height: auto;
         width: 100%;
     }
-    
-    /* about us section */
-
     .about {
-        height: 200vh;
+        height: 100vh;
         width: 100%;
     }
     
@@ -261,7 +248,44 @@ footer {
     
     .about-container .text {
         width: 85%;
+    } 
+}
+
+/* mobile media query */
+@media (max-width: 428px) {
+    /* header section */
+    .header-title {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 4rem;
     }
+
+    .links {
+        flex-direction: column;
+    }
+
+    /* gallery section */
+    /* .gallery {
+        height: auto;
+        width: 100%;
+    } */
+    
+    /* about us section */
+
+    .about {
+        height: 200vh;
+        width: 100%;
+    }
+    
+    /* .about h2 {
+        width: 100%;
+        padding-top: 5vh;
+    }
+    
+    .about-container .text {
+        width: 85%;
+    } */
     
     /* contact us section */
     .contact h3 {
@@ -292,7 +316,7 @@ footer {
 
     /* footer section */
     footer {
-        height: auto;
+        height: 40vh;
         padding-top: 2.5vh;
         font-size: 2rem;
         flex-direction: column;
